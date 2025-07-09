@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "arka-color-picker-js": "^1.0.1",
+    "color-picker-js": "^1.0.0"
+  }
+}

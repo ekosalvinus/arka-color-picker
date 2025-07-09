@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Picker Example</title>
+  <link rel="stylesheet" href="node_modules/color-picker-js/dist/color-picker.css">
+</head>
+<body>
+    <h3>Color Values</h3>
+      <pre id="color-values"></pre>
+  <div id="color-picker"></div>
+
+  <script src="node_modules/color-picker-js/dist/color-picker.min.js"></script>
+  <script>
+    const colorPicker = new ColorPicker({
+      container: '#color-picker',
+      color: '#ff0000',
+      showHex: true,
+      showRgb: true,
+      showHsl: true,
+      onChange: function(color) {
+        console.log('Color changed:', color);
+        // Update color values display
+    document.getElementById('color-values').textContent = 
+    `HEX: ${color.hex}
+    
+    RGB: rgb(${color.rgb.r}, ${color.rgb.g}, ${color.rgb.b})
+    HSL: hsl(${color.hsl.h}, ${color.hsl.s}%, ${color.hsl.l}%)`;
+
+      },
+        
+    });
+
+    // Initialize previews
+document.getElementById('preview-basic').style.backgroundColor = colorPickerBasic.getColor().hex;
+document.getElementById('preview-basic').textContent = colorPickerBasic.getColor().hex;
+
+  </script>
+  
+</body>
+</html>
