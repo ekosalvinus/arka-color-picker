@@ -1,0 +1,53 @@
+{
+  "name": "color-picker-js",
+  "version": "1.0.0",
+  "description": "A lightweight, customizable color picker component for web applications",
+  "main": "dist/color-picker.js",
+  "module": "dist/color-picker.esm.js",
+  "browser": "dist/color-picker.min.js",
+  "style": "dist/color-picker.css",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "color-picker",
+    "color",
+    "picker",
+    "javascript",
+    "ui",
+    "component",
+    "rgb",
+    "hex",
+    "hsl"
+  ],
+  "author": "Eko Salvinus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekosalvinus/color-picker-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ekosalvinus/color-picker-js/issues"
+  },
+  "homepage": "https://github.com/ekosalvinus/color-picker-js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "rollup": "^4.0.2",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
