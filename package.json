@@ -35,9 +35,9 @@
     "url": "git+https://github.com/ekosalvinus/arka-color-picker.git"
   },
   "bugs": {
-    "url": "https://github.com/ekosalvinus/arka-color-picker-js/issues"
+    "url": "https://github.com/ekosalvinus/arka-color-picker/issues"
   },
-  "homepage": "https://github.com/ekosalvinus/arka-color-picker/blob/main/README.md",
+  "homepage": "https://github.com/ekosalvinus/arka-color-picker#README.md",
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/preset-env": "^7.23.0",
